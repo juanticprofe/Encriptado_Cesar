@@ -1,4 +1,5 @@
-//modificaciÃ³n desde web
+//este algoritmo está modificado
+
 Subproceso cifrado=cesar(cadenadetexto,salto)
 	dimension alfabeto(27)	
 	cifrado=""
@@ -35,7 +36,7 @@ FinSubProceso
 
 
 Subproceso ponletras(lista por referencia)
-	abecedario="ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ"
+	abecedario="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 	para i=1 hasta 27 hacer
 		lista(i)=subcadena(abecedario,i,i)
 	FinPara
@@ -43,11 +44,11 @@ FinSubProceso
 
 
 Algoritmo Encriptando
-	Escribir "ALGORITMO DE ENCRIPTACIÃ“N CESAR"
-	Escribir "Vamos a encriptar una frase completa, puede llevar espacios y minÃºsculas. No debe llevar acentos"
+	Escribir "ALGORITMO DE ENCRIPTACIÓN CESAR"
+	Escribir "Vamos a encriptar una frase completa, puede llevar espacios y minúsculas. No debe llevar acentos"
 	Escribir "Introduce la palabra a buscar"
 	Leer textonormal
-	Escribir "En esta versiÃ³n, vamos a utilizar 3 saltos de desplazamiento"
+	Escribir "En esta versión, vamos a utilizar 3 saltos de desplazamiento"
 	textocifrado=cesar(mayusculas(textonormal),3)
-	Escribir "Nuestro texto encriptado serÃ­a: ", textocifrado
+	Escribir "Nuestro texto encriptado sería: ", textocifrado
 FinAlgoritmo
